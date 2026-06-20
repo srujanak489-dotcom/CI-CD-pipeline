@@ -9,6 +9,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      APP_ENV: production
 
     steps:
       - name: Deployment Simulation
