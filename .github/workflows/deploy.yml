@@ -1,0 +1,17 @@
+name: Deploy Pipeline
+
+on:
+  workflow_run:
+    workflows: ["Build Pipeline"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deployment Simulation
+        run: |
+          echo "Deployment Started"
+          echo "Deployment Successful"
