@@ -1,2 +1,2 @@
 def test_sample():
-    assert 5 == 5
+    assert 5 == 10
